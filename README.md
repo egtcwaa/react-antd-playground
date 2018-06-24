@@ -21,6 +21,20 @@ https://ant.design/docs/react/use-with-create-react-app
 
 This application is still under development. Additional features will be published once ready.
 
+Components structure
+src/index.js
+ |-components/MyLayout.js
+    |-components/Dashboard.js
+        |-components/DashboardCards.js
+            |-components/MessageCard.js
+            |-components/TaskCard.js
+            |-components/ShoppingCards.js
+            |-components/MailCard.js
+        |-components/DashboardChart.js
+    |-components/Calendar.js
+    |-components/MapPage.js
+        |-components/GoogleMap.js
+        
 <u>26 Jun 2018 release</u>
 1. Make ajax request to NZTA API to get the official parking information within New Zealand and show the parking location on Google Map.
 2. Added Google Authentication feature
