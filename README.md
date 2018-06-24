@@ -8,7 +8,7 @@ https://ant.design/docs/react/use-with-create-react-app
 <a href="https://coding-playground.000webhostapp.com/">Demo</a>
 
 Installation:
-> npm install
+\> npm install
 
 Run the project: 
 > npm start
