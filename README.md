@@ -12,10 +12,12 @@ Installation:
 \> npm install
 
 Run the project: 
-> npm start
+
+\> npm start
 
 Build the project:
-> npm run build
+
+\> npm run build
 
 This application is still under development. Additional features will be published once ready.
 
