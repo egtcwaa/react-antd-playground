@@ -7,15 +7,15 @@ https://ant.design/docs/react/use-with-create-react-app
 
 <a href="https://coding-playground.000webhostapp.com/">Demo</a>
 
-Installation:
+<b>Installation:</b>
 
 \> npm install
 
-Run the project: 
+<b>Run the project: </b>
 
 \> npm start
 
-Build the project:
+<b>Build the project:</b>
 
 \> npm run build
 
