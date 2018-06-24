@@ -1,0 +1,16 @@
+#MessageCardTitle .ant-card-head {
+    background-color: rgb(51, 122, 183);
+  }
+
+  #TaskCardTitle .ant-card-head {
+    background-color: rgb(92, 184, 92);
+  }
+
+  #ShoppingCardTitle .ant-card-head {
+    background-color: rgb(240, 173, 78);
+  }
+
+  #MailCardTitle .ant-card-head {
+    background-color:  rgb(217, 83, 79);
+  }
+ 
