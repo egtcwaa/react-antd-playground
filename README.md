@@ -7,7 +7,17 @@ https://ant.design/docs/react/use-with-create-react-app
 
 <a href="https://coding-playground.000webhostapp.com/">Demo</a>
 
+Installation:
+> npm install
+
 Run the project: 
-  npm start
-  
-This application is still in development. Additional features will be published once ready.
+> npm start
+
+Build the project:
+> npm run build
+
+This application is still under development. Additional features will be published once ready.
+
+<u>26 Jun 2018 release</u>
+1. Make ajax request to NZTA API to get the official parking information within New Zealand and show the parking location on Google Map.
+2. Added Google Authentication feature
