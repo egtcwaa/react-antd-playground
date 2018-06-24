@@ -21,8 +21,8 @@ class GoogleMapsContainer extends React.Component {
             activeMarkerAddress: null,
             selectedPlace: {},
             centerPlace: {
-                lat: null,//props.defaultCenter.lat,
-                lng: null//props.defaultCenter.lng
+                lat: null,
+                lng: null
             }
 
         }
@@ -96,30 +96,10 @@ class GoogleMapsContainer extends React.Component {
         }
 
         $.ajax({
-            // url: "https://api.at.govt.nz/v2/locations/parkinglocations?callback=" + apiCallback,
-            // beforeSend: function (xhrObj) {
-            //     // Request headers
-            //     xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", key);
-            // },
             url: "https://data-atgis.opendata.arcgis.com/datasets/85f5330297974b76b06a130418c5397d_1.geojson",
             type: "GET"
         })
             .done(function (data) {
-                // const start = data.indexOf("(");
-                // const end = data.lastIndexOf(")");
-
-                // const jsonString = data.substring(start + 1, end);
-
-                // const jsonObj = JSON.parse(jsonString);
-                // let parkingLocationArr = [];
-
-                // jsonObj.response.forEach(element => {
-                //     parkingLocationArr.push(element);
-
-                // });
-
-                // that.setState({ markers: parkingLocationArr })
-
                 let parkingLocationArr = [];
 
                 data.features.forEach((element)=>{
@@ -135,23 +115,6 @@ class GoogleMapsContainer extends React.Component {
             .fail(function () {
                 console.log("NZTA API connection failed!");
             });
-
-        // const apiKey = "a2e75b-9916c0-edca19-549235-d24049";
-
-        // $.ajax({
-        //     url: "https://aviation-edge.com/api/public/cityDatabase?key=" + apiKey,
-        //     type: "GET"
-        // })
-        //     .done(function (data) {
-
-
-        //         console.log(data);
-
-        //     })
-        //     .fail(function () {
-        //         console.log("NZTA API connection failed!");
-        //     });
-
     }
 
     onMarkerClick = (props, marker, e) => {
